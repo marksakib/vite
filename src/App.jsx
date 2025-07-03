@@ -3,6 +3,7 @@ import { Col, Container, Row } from 'react-bootstrap'
 import './App.css'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import Menu from './components/menu';
 
 function App() {
 let [data, setData] = useState([]);
@@ -20,6 +21,7 @@ useEffect (() => {
 
   return (
     <>
+    <Menu />
     <Container>
       <Row>
         
