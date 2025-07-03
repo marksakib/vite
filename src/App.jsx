@@ -10,7 +10,7 @@ let [data, setData] = useState([]);
 let getData = ()=>{
   axios.get('https://dummyjson.com/products')
   .then((respose)=> {
-    setData(respose.data);
+    setData(respose.data.products);
 })}
 useEffect (() => {
  getData()
@@ -28,9 +28,8 @@ useEffect (() => {
           <>
           <h3>{item.title}</h3>
           <h1>{item.id}</h1>
-          <p>{item.body}</p>
+          <p>{item.description}</p>
           <img src={item.thumbnail} alt="" srcset="" />
-          
           </>
          </Col>
         )
