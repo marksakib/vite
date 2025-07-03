@@ -29,6 +29,7 @@ useEffect (() => {
           <h3>{item.title}</h3>
           <h1>{item.id}</h1>
           <p>{item.body}</p>
+          <img src={item.thumbnail} alt="" srcset="" />
           
           </>
          </Col>
