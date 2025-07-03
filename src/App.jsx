@@ -8,7 +8,7 @@ function App() {
 let [data, setData] = useState([]);
 
 let getData = ()=>{
-  axios.get('https://jsonplaceholder.typicode.com/posts')
+  axios.get('https://dummyjson.com/products')
   .then((respose)=> {
     setData(respose.data);
 })}
@@ -29,6 +29,7 @@ useEffect (() => {
           <h3>{item.title}</h3>
           <h1>{item.id}</h1>
           <p>{item.body}</p>
+          
           </>
          </Col>
         )
