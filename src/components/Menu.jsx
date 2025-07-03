@@ -7,6 +7,7 @@ import './Menu.css'; // Import the CSS file for styling
 const Menu = () => {
   return (
    <>
+   
    <Navbar expand="lg" className="bg-body-tertiary">
       <Container>
         <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
